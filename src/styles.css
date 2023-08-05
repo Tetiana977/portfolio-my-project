@@ -30,6 +30,10 @@ h2 {
    font-size: 64px;
 }
 
+h4 {
+   font-size: 48px;
+}
+
 p {
    font-weight: normal;
    font-size: 16px;
@@ -65,6 +69,11 @@ p {
    font-weight: normal;
    line-height: 1.5;
    font-size: 24px;
+}
+
+.container,
+.contact-box {
+   margin: 0 60px;
 }
 
 .content {
@@ -117,37 +126,6 @@ p {
    padding: 120px 60px ;
 }
 
-.invitation {
-   padding: 10px 50px 10px 30px;
-   background-color: var(--secondary-color);
-   border-radius: 20px;
-}
-
-.invitation h3 {
-   font-size: 40px;
-   font-weight: 600;
-   font-family: var(--heading-font-family);
-}
-
-.invitation p {
-   font-size: 18px;
-   color: #272142;
-}
-
-.email-link {
-   color: #000000;
-   font-size: 24px;
-   text-decoration: none;
-}
-
-.icon-links {
-   margin: 10px 0 40px 0;
-}
-
-.fa-brands {
-   color: var(--branding-color);
-}
-
 .logo {
    max-height: 40px;
 }
@@ -179,6 +157,63 @@ nav li.active a {
    color: var(--branding-color); 
 }
 
+/*.invitation {
+   padding: 10px 50px 10px 30px;
+   background-color: var(--secondary-color);
+   border-radius: 20px;
+}
+
+.invitation h3 {
+   font-size: 40px;
+   font-weight: 600;
+   font-family: var(--heading-font-family);
+}
+
+.invitation p {
+   font-size: 18px;
+   color: #272142;
+}*/
+
+footer {
+   margin: 60px 0;
+}
+
+footer .contact-box {
+   background: var(--secondary-color);
+   padding: 30px;
+   border-radius: 10px;
+   padding: 30px 120px;
+}
+
+footer .contact-box p {
+   margin: 0;
+}
+
+footer .email-link {
+   color: #000000;
+   font-size: 24px;
+   text-decoration: none;
+}
+
+footer .email-link:hover {
+   color: var(--branding-color);
+}
+
+footer .social-links a {
+   margin: 0 20px;
+   color: var(--branding-color);
+   background: var(--secondary-color);
+   padding: 10px 14px;
+   font-size: 18px;
+   border-radius: 50%;
+   transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+   color: white;
+   background: var(--branding-color);
+} 
+
 @media (max-width:900px) {
    h1 {
       font-size: 44px;
@@ -186,6 +221,9 @@ nav li.active a {
    }
    h2 {
       font-size: 44px;
+   }
+   h4 {
+      font-size: 26px;
    }
    nav li {
    font-size: 12px;
