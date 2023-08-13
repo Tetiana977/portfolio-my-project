@@ -37,9 +37,8 @@ h3 {
 p {
    font-weight: normal;
    font-size: 16px;
-   line-height: 1.7;
+   line-height: 30px;
 }
-
 
 .hero {
    background: var(--secondary-color);
@@ -59,15 +58,6 @@ p {
    font-weight: normal;
    line-height: 1.5;
    font-size: 24px;
-}
-
-.container,
-.contact-box {
-   margin: 0 50px;
-}
-
-.content {
-   margin: 30px;
 }
 
 .content-container {
@@ -94,6 +84,11 @@ p {
    font-size: 14px;
 }
 
+.content-contact a {
+   text-decoration: none;
+   color: var(--branding-color);
+}
+
 .btn-branding {
    background: var(--branding-color);
    border-radius: 4px;
@@ -112,6 +107,11 @@ p {
    padding: 15px 30px;
 }
 
+.btn-branding-outline:hover {
+   background: var(--branding-color);
+   color: white;
+}
+
 .project-description {
    padding: 120px 60px ;
 }
@@ -121,11 +121,11 @@ p {
 }
 
 nav {
-   padding: 40px 0;
+   padding: 20px 0;
 }
 
 nav ul {
-   margin: 0 15px;
+   margin: 0;
    padding: 0;
 }
 
@@ -179,7 +179,6 @@ footer .social-links a {
    font-size: 18px;
    border-radius: 50%;
    transition: all 100ms ease-in-out;
-   font-size: 18px;
 }
 
 footer .social-links a:hover {
@@ -187,10 +186,14 @@ footer .social-links a:hover {
    background: var(--branding-color);
 } 
 
-@media (max-width:900px) {
+.github-link a {
+   color: var(--branding-color);
+}
+
+@media (max-width:912px) {
    h1 {
       font-size: 44px;
-      line-height: 56px;
+      line-height: 1.5;
    }
    h2 {
       font-size: 44px;
@@ -213,5 +216,58 @@ footer .social-links a:hover {
    .project-description {
       padding: 0;
       text-align: center;
+   }
+   footer .email-link {
+      font-size: 18px;
+   }
+   footer .contact-box {
+      padding: 30px;
+   }
+}
+
+@media (max-width:420px) {
+   .content h1 {
+      font-size: 44px;
+      line-height: 1.5;
+   }
+   .content h2 {
+      font-size: 30px;
+      font-weight: 500;
+   }
+   .content-contact {
+      text-align: center;
+   }
+   .content-contact h3 {
+      font-size: 20px;
+      font-weight: 500;
+   }
+   .content p {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+      color: #272142;
+   }
+   .hero h1 {
+      font-size: 38px;
+      line-height: 1.5;
+   }
+   .hero h2,
+   .project-description h2 {
+      font-size: 30px;
+   }
+   .hero p {
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0;
+      color: #272142;
+   }
+   .project-description p {
+      font-size: 15px;
+   }
+   footer p {
+      font-size: 14px;
+   }
+   .github-link p {
+      font-size: 12px;
    }
 }
